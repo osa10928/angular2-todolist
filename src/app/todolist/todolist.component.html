@@ -1,0 +1,31 @@
+<h2>My To-Do List</h2>
+<p>(click on task to mark as complete)</p>
+<ul class="todo-list">
+  <li id="add-task">
+    <label>New Task:
+      <input #task />
+    </label>
+    <button (click)="addTask(task.value); task.value=''">
+      add
+    </button>
+  </li>
+  <li *ngFor="let task of list">
+    <div class="task"
+         [ngClass]="getCss(task)"
+         (click)="toggleTask(task)">
+      <span class="task-item">{{ task.task }} </span>
+      <span class="completed-message"
+            *ngIf="checkCompleted(task)">(completed)
+      </span>
+      <div class="button-group">
+        <button (click)="deleteTask(task)"
+                class="delete-btn"
+                type="button">Delete
+        </button>
+      </div>
+    </div>
+  </li>
+</ul>
+<button (click)="deleteCompleted()"
+        id="delete-completed">Deleted Completed Tasks!
+</button>

@@ -1,0 +1,75 @@
+h2 {
+  margin-top: 3%;
+  margin-bottom: 0;
+  text-align: center;
+  font-family: 'Spectral SC', serif;
+}
+
+p {
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+
+ul {
+  list-style-type: none;
+  -webkit-padding-start: 0;
+  max-width: 400px;
+  margin: auto;
+}
+
+li {
+  border-radius: 10px;
+  margin: 1% 0;
+  background: #B7B7B7;
+  font-family: 'Roboto', sans-serif;
+}
+
+li:hover {
+  background: #E3AD5C;
+  color: white;
+}
+
+#add-task {
+  padding: 2%;
+  border-radius: 0;
+  background: #58EC47;
+  border: solid thick #F9F22A;
+  text-align: center;
+}
+
+.task {
+  padding: 2% 5%;
+  border-radius: 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: baseline;
+}
+
+.completed {
+  background: #58EC47;
+  border: solid 2px #F9F22A;
+}
+
+.completed-message {
+  color: #244F14;
+  font-style: italic;
+  font-size: 0.7em;
+  font-weight: bolder;
+}
+
+.button-group {
+  margin-left: auto;
+}
+
+.delete-btn {
+  background: #E90835;
+}
+
+#delete-completed {
+  display: block;
+  margin: 20px auto;
+  background: #58EC47;
+  padding: 5px;
+  font-size: 1.1em;
+}
