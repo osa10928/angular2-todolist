@@ -56,6 +56,7 @@ export class TodolistComponent implements OnInit {
     if (confirm('Are you sure you want to delete ALL completed tasks?')) {
       this.todolistService.deleteCompleted();
     }
+    this.getList();
   }
 
   toggleTask(task: ListItem): void {

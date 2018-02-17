@@ -1,27 +1,21 @@
-# Ang2Setup
+# Angular2 Todo-List
+This repo features a simple angular2 todo-list application. It served the purpose of introducing me to the angular2 framework. It is easy to setup and run if you decide to run it on your machine, simply follow the instructions below.
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.5.4.
+### Details About App
+First, a couple of details about the application. The app features a simple ToDo-List in which the user can add tasks, check tasks as complete, delete tasks, and delete all completed task. A core aspect of the project is that the ToDo list is saved onto the user's browser localstorage. This means that the application not only requires the browser to have localstorage, but that the saved tasks are obtained from the browser synchronously. Although I would have liked to test out some of angular2's HttpClient Module, the specifications for this project would not allow for it (maybe next time).
 
-## Development server
+## Specifications
+Use npm to install the package.json dependencies.
+`npm >= 5.5.1`
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+This app was built using the Angular2 CLI
+`Angular CLI: 1.5.4`
 
-## Code scaffolding
+## Setup
+1. Clone/download the repository.
+2. Navigate to the repository directory on your command line interface.
+3. Install the dependencies by running `npm install`
+4. Serve app to your browser by running `ng serve` or `npm start`
+5. Open browser and navigate to localhost:4200
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+You are now ready to interact with the application. Have fun!
